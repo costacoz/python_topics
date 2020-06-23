@@ -24,5 +24,16 @@ def queue_deque():
         queue.popleft()
         queue.append('crab')
 
+def stack_type():
+    """
+        Stack type for comparison.
+    """
+    stack = ["dog", "cat", "fish", "bear"]
+    for n in range(1000):
+        stack.pop()
+        stack.append('crab')
+
 print(timeit(queue_bad, number=60000)) # 9.5892716
 print(timeit(queue_deque, number=60000)) # 7.6286140
+print(timeit(stack_type, number=60000)) # 7.768637
+
