@@ -37,3 +37,7 @@ print(f'1.00 % 0.10 via regular float = {1.00 % 0.10}')
 print(sum([Decimal('0.1')] * 10) == Decimal('1.0'))
 
 print(sum([0.1] * 10) == 1.0)
+
+# The decimal module provides arithmetic with as much precision as needed:
+getcontext().prec = 36
+print(Decimal(1) / Decimal(7))
