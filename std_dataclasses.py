@@ -16,6 +16,8 @@
 
     dataclasses can also include methods, like distance_to shown below.
 
+    More on this topic here:
+    https://realpython.com/python-data-classes/
 """
 
 from dataclasses import dataclass
