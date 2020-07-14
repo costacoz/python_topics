@@ -18,4 +18,8 @@ def read_from_file(filename, block=1024 * 8):
     """
     with open(filename, "r") as fp:
         for chunk in iter(partial(fp.read, block), ""):
-            yield chunk
+            yield chunk # returns generator
+
+
+for i in read_from_file('README.md'):
+    print(len(i))
