@@ -195,6 +195,9 @@ def list_reverse():
 print(list_reverse.__doc__)
 list_reverse()
 
+# analog is str[::-1]
+print('first_edition'[::-1])
+
 """
     list.copy() example.
 """
